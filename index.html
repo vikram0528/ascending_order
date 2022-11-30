@@ -6,10 +6,12 @@
 <P>four number ascending order</P>
 <script>
 
-var a = 21;
-var b = 5;
-var c = 15;
-var d = 33;
+var a = prompt("enter first number");
+var b = prompt("enter second number");
+var c = prompt("enter third number");
+var d = prompt("enter fourth number");
+
+                                                    // if a is bigger
 
 if(a>b && a>c && a>d){
 
@@ -51,6 +53,8 @@ else{
 console.log("b and c and d are equal" + a)
 }
 }
+ 
+                                                    // if b is bigger
 
 else if(b>a && b>c && b>d){
 
@@ -99,17 +103,69 @@ console.log("a and c and d are equal" + b)
 }
 }
 
-    //
+                                                   // if c is bigger
+
+else if(c>a && c>b && c>d){
+
+if(d>a && d>b){
+
+if(a>b){
+console.log(b + " " + a  + " " + d + " " + c)
+}
+else{
+console.log(a + " " +  b + " " + d + " " + c)
+}
+
+}
+else if(a>b && a>d){
+
+if(b>d){
+
+console.log(d + " " +  b + " " + a + " " + c)
+
+}
+else{
+
+console.log(b + " " +  d + " " + a + " " + c)
+
+}
+
+}
+
+else if(b>a && b>d){
+
+if(a>d){
+
+console.log( d + " " +  a + " " + b + " " + c)
+
+}
+else{
+
+console.log(a + " " +  d + " " + b + " " + c)
+
+}
+
+}
+else{
+
+console.log("a and b and d are equal" + c)
+
+}
+
+}
+
+
+                                                      // if d is bigger
 
 else if(d>a && d>b && d>c){
 
 if(a>b && a>c){
 
 if(c>b){
-console.log(b + " " + c  + " " + a + " " + d)
+console.log(b + " " +  c + " " + a + " " + d)
 }
 else{
-console.log(c + " " +  b + " " + a + " " + d)
+console.log(c+ " " +  b + " " + a + " " + d)
 }
 
 }
@@ -117,7 +173,7 @@ else if(b>a && b>c){
 
 if(a>c){
 
-console.log(c + " " +  a + " " + b + " " + d)
+console.log(c + " " +  a + " " +  b+ " " + d)
 
 }
 else{
@@ -130,71 +186,21 @@ console.log(a + " " +  c + " " + b + " " + d)
 
 else if(c>a && c>b){
 
-if(b>a){
+if(a>b){
 
-console.log( a + " " +  b + " " + c + " " + d)
-
-}
-else{
-
-console.log(b + " " +  a + " " + c + " " + c)
-
-}
+console.log(b + " " +  a + " " + c + " " + d)
 
 }
 else{
 
-console.log("a and b and c are equal" + d)
-}
-
-}
-
-
-//
-else if(b>a && b>c && b>d){
-
-if(c>a && c>d){
-
-if(d>a){
-console.log(a + " " +  d + " " + c + " " + b)
-}
-else{
-console.log(d + " " +  a + " " + c + " " + b)
-}
-
-}
-else if(d>a && d>c){
-
-if(a>c){
-
-console.log(c + " " +  a + " " + d + " " + b)
-
-}
-else{
-
-console.log(a + " " +  c+ " " + d + " " + b)
-
-}
-
-}
-
-else if(a>c && a>d){
-
-if(d>c){
-
-console.log(c + " " +  d+ " " + a + " " + b)
-
-}
-else{
-
-console.log(d + " " +  c + " " + a + " " + b)
+console.log(a + " " +  b + " " + c + " " + d)
 
 }
 
 }
 else{
 
-console.log("a and c and d are equal" + b)
+console.log("a and c and b are equal" + d)
 }
 }
 
